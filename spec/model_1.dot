@@ -1,18 +1,19 @@
-   digraph models_diagram {
-      graph[overlap=false, splines=true]
-      "Venue" [shape=record, label="{\
-        Venue|name :string\l\
-      }"]
+digraph models_diagram {
+  graph[overlap=false, splines=true]
 
-      "User" [shape=record, label="{User|\
-        email :string\l\
-        password :string\l\
-      }"]
+  "Venue" [shape=record, label="{\
+    Venue|name :string\l\
+  }"]
 
-      "Order" [shape=record, label="{Order|\
-        name :string\l\
-      }"]
+  "User" [shape=record, label="{User|\
+    email :string\l\
+    password :string\l\
+  }"]
 
-      "User" -> "Order" [arrowtail=odot, arrowhead=crow, dir=both, label="request"]
-      "User" -> "Venue" [arrowtail=odot, arrowhead=crow, dir=both, label=agent]
-  }
+  "Order" [shape=record, label="{Order|\
+    name :string\l\
+  }"]
+
+  "User" -> "Order" [arrowtail=odot, arrowhead=crow, dir=both, label="request"]
+  "User" -> "Venue" [arrowtail=odot, arrowhead=crow, dir=both, label=agent]
+}

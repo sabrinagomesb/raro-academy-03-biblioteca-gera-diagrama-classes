@@ -3,9 +3,9 @@ RSpec.describe User do
     User
   }
 
-  let (:dotfile) { File.open("model_1.dot") }
+  let (:dotfile) { File.open("spec/model_1.dot", "r") }
 
   it "Deve Gerar um arquivo em DOT" do
-    expect(subject.to_diagram()).to be_a(dotfile)
+    expect(subject.to_diagram()).to eq(dotfile)
   end
 end
