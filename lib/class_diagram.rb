@@ -2,6 +2,7 @@
 
 require "rspec"
 require "ruby-graphviz"
+
 require_relative "class_diagram/version"
 require_relative "class_diagram/diagram/to_diagram.rb"
 

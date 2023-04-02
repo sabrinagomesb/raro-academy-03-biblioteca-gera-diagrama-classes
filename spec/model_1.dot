@@ -1,4 +1,4 @@
-digraph models_diagram {
+digraph D {
   graph[overlap=false, splines=true]
 
   "Venue" [shape=record, label="{\
