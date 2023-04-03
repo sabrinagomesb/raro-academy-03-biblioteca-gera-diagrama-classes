@@ -1,7 +1,7 @@
 require "graphviz"
 
-module ToDiagram
-  def to_diagram
+module Diagrama
+  def para_diagrama
     # Create a new graph
     g = GraphViz.new(:G, :type => :digraph)
 

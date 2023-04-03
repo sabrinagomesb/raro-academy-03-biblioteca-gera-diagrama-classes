@@ -1,5 +1,7 @@
 class User
-  extend ToDiagram
+  extend Relacionamento
+  extend Diagrama
+
   attr_accessor :email, :password
 
   def initialize(email, password)
