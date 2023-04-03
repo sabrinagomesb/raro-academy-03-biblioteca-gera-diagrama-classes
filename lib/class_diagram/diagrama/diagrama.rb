@@ -1,7 +1,7 @@
 require "graphviz"
 
 module Diagrama
-  def para_diagrama
+  def para_diagrama(tipo)
     # Create a new graph
     g = GraphViz.new(:G, :type => :digraph)
 
@@ -12,8 +12,7 @@ module Diagrama
     # Create an edge between the two nodes
     g.add_edges(hello, world)
 
-    # Generate output ńg/dorfile
-    g.output(:png => "./outputs/model_1.png")
-    g.output(:dot => "./outputs/model_1.dot")
+    # Generate output
+    g.output(tipo.to_sym => "./outputs/model_1.#{tipo}")
   end
 end

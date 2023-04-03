@@ -1,13 +1,9 @@
 RSpec.describe User do
-  subject {
-    User
-  }
+  subject { User }
 
-  let (:dotfile) { File.open("spec/model_1.dot", "r") }
-
-  describe "Modulo Diagrama" do
+  describe "Módulo Diagrama" do
     it "Deve Gerar um arquivo em DOT" do
-      subject.para_diagrama
+      subject.para_diagrama("dot")
       path = "outputs/model_1.dot"
       dotfile_gerado = File.open(path, "r")
 
@@ -16,7 +12,7 @@ RSpec.describe User do
     end
 
     it "Deve Gerar um arquivo em PNG" do
-      subject.para_diagrama
+      subject.para_diagrama("png")
       path = "outputs/model_1.png"
       png_gerado = File.open(path, "r")
 
