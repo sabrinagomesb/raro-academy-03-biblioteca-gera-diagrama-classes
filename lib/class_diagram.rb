@@ -5,7 +5,7 @@ require "ruby-graphviz"
 
 require_relative "class_diagram/version"
 require_relative "class_diagram/diagrama/diagrama.rb"
-require_relative "class_diagram/diagrama/relacionamento.rb"
+require_relative "class_diagram/diagrama/relacoes.rb"
 
 # Modelo de exemplo 1
 require_relative "class_diagram/model_1/order.rb"

@@ -1,5 +1,5 @@
 class User
-  extend Relacionamento
+  extend Relacoes
   extend Diagrama
 
   attr_accessor :email, :password
@@ -8,4 +8,11 @@ class User
     @email = email
     @password = password
   end
+
+  def atualiza_senha(password)
+    @password = password
+  end
+
+  para_muitos :Order
+  para_um :Venue
 end
