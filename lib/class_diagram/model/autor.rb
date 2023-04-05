@@ -1,4 +1,6 @@
 class Autor
+  extend Diagrama
+
   attr_accessor :nome
 
   def initialize(nome)

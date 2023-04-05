@@ -1,4 +1,5 @@
 class Livro
+  extend Diagrama
   attr_accessor :nome, :autor, :ano, :emprestado
 
   def initialize(nome, autor, ano)
@@ -10,4 +11,6 @@ class Livro
 
   def disponivel?
   end
+
+  tem_um(:Emprestimo)
 end
