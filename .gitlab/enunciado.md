@@ -46,7 +46,7 @@ Onde `tem_muitos` e `tem_um` são métodos de classe que recebem como parâmetro
 
 O diagrama de classes deve ser gerado a partir de uma classe qualquer. A partir dessa classe todas que estiverem relacionadas devem ser descobertas e desenhadas.
 
-A documentação completa do formato .dot pode ser encontrada [aqui](http://www.graphviz.org/doc/info/lang.html).
+A documentacão completa do formato .dot pode ser encontrada [aqui](http://www.graphviz.org/doc/info/lang.html).
 
 
 

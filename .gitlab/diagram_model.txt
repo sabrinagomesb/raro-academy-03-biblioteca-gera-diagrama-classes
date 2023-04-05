@@ -1,0 +1,51 @@
+classDiagram
+    Biblioteca "1" <--> "*" Livro
+    Biblioteca "1" <--> "*" Leitor
+    Biblioteca "1" <--> "*" Emprestimo
+    Biblioteca "1" <--> "*" Faturamento
+    Leitor "1" <--> "1" Emprestimo
+    Emprestimo "1" <--> "1" Livro
+    Livro "*" <--> "1" Autor
+    Faturamento "1" <--> "*" Emprestimo
+
+    class Biblioteca {
+        livros :Livro[]
+        leitores :Leitor[]
+        emprestimos :Emprestimo[]
+        pagamentos :integerr[]
+        emprestimo()
+        devolucao()
+    }
+
+    class Emprestimo {
+        data_inicio :Date
+        data_fim :Date
+        livro :Livro
+        leitor :Leitor
+        preco() :float
+    }
+
+    class Livro {
+        +nome :string
+        +autor :Autor
+        +ano :integer
+        disponivel?
+    }
+
+    class Faturamento {
+        total :integer
+        pagamentos: pagamentos[]
+        adiociona_pagamento()
+    }
+
+    class Autor {
+        +nome :string
+    }
+
+    class Leitor {
+        +nome :string
+        +email :string
+        +nasc :Date
+        atualiza_cadastro()
+    }
+
