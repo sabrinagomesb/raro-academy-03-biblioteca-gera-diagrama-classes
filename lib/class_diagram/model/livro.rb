@@ -12,5 +12,5 @@ class Livro
   def disponivel?
   end
 
-  tem_um(:Emprestimo)
+  tem_um(:Emprestimo, :Autor)
 end

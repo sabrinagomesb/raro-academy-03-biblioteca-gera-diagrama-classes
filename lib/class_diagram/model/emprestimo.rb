@@ -1,9 +1,9 @@
 class Emprestimo
   extend Diagrama
 
-  attr_accessor :data_inicio, :data_fim, :livro, :leitor
+  attr_accessor :livro, :leitor, :data_inicio, :data_fim
 
-  def initialize(, livro, leitor, data_inicio, data_fim)
+  def initialize(livro, leitor, data_inicio, data_fim)
     @livro = livro
     @leitor = leitor
     @data_inicio = data_inicio
@@ -12,4 +12,6 @@ class Emprestimo
 
   def preco
   end
+
+  tem_um(:Faturamento)
 end

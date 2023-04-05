@@ -14,4 +14,6 @@ class Leitor
     @email = email
     @senha = senha
   end
+
+  tem_um(:Emprestimo)
 end

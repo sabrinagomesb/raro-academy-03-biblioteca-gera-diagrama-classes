@@ -16,4 +16,10 @@ class Biblioteca
 
   def devolucao(emprestimo)
   end
+
+  def disponiveis?
+  end
+
+  tem_muitos(:Livro, :Leitor, :Emprestimo)
+  tem_um(:Faturamento)
 end

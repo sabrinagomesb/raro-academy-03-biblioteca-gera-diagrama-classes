@@ -10,7 +10,7 @@ RSpec.describe Emprestimo do
 
   context "Atributos e metodos" do
     it "Deve pegar os 'metodos' e 'atributos'" do
-      relacoes = { :atributos => [:livro, :leitor, :data_inicio, :data_fim], :metodos => [:precos] }
+      relacoes = { :atributos => [:livro, :leitor, :data_inicio, :data_fim], :metodos => [:preco] }
       expect(subject.busca_atributos).to eq(relacoes)
     end
   end
